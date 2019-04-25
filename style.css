@@ -33,7 +33,7 @@ html {
 
 .main .intro {
     grid-area: intro;
-    margin-left: 37%;
+    margin-left: 28%;
 }
 
 
@@ -136,7 +136,12 @@ progress[value]::-webkit-progress-value {
 .main .container {
     display: inline-block;
     max-width: 50%;
-    margin-left: 12%;
+    margin-left: 3%;
+}
+
+.col-2 {
+    padding-right: 16%;
+    padding-left: 0;
 }
 
 .main .right {
@@ -210,10 +215,15 @@ tr .right {
         max-width: 100%;
     }
 
+    .col-2 {
+        padding-right: 0;
+    }
+
     .main img {
         position: relative;
         float: right;
         width: 40%;
+        margin-right: 5%;
     }
 
     .header, .footer {

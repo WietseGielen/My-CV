@@ -140,8 +140,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .col-2 {
-    padding-right: 16%;
-    padding-left: 0;
+    padding-right: 0;
+    padding-left: 15%;
 }
 
 .main .right {
@@ -174,9 +174,16 @@ tr .right {
     background-color:rgba(255, 255, 255, 0.74);
 }
 
+/* small desktop */
+
 @media only screen and (max-width:1034px) {
     .main .intro {
         margin-left: 0;
+    }
+
+    .col-2 {
+        padding-left: 0;
+        padding-right: 30%;
     }
 }
 
@@ -216,7 +223,7 @@ tr .right {
     }
 
     .col-2 {
-        padding-right: 0;
+        padding-right: 3%;
     }
 
     .main img {
@@ -251,6 +258,8 @@ tr .right {
     .main img {
         width: 100%;
         float: right;
+        margin: 3%;
+        margin-right: 0;
     }
 }
 

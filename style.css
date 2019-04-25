@@ -106,13 +106,21 @@ progress[value]::-webkit-progress-value {
 
 .main .left {
     position: relative;
-    margin-left: 5%;
     float: left;
+    width: 50%;
+    margin-left: 0;
+}
+
+.main .container {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-left: 3%;
 }
 
 .main .right {
     float: right;
-    width: 40%;
+    width: 45%;
 }
 
 .main table {
@@ -169,6 +177,10 @@ tr .right {
         margin-left: 0;
     }
 
+    .main .container {
+        margin-left: 0;
+    }
+
     .main img {
         position: relative;
         float: right;
@@ -187,7 +199,7 @@ tr .right {
         text-align: left;
     }
 
-    .main .left {
+    .main .left, .main .right {
         position: relative;
         float: left;
         width: 100%;

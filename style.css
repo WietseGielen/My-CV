@@ -14,11 +14,32 @@ html {
       "footer footer footer footer";
 }
 
+.container-template {
+    display: grid;
+    grid-template-columns: 25% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "img data"
+        "img intro";
+}
+
+.main .img {
+    grid-area: img;
+}
+
+.main .data {
+    grid-area: data;
+}
+
+.main .intro {
+    grid-area: intro;
+    margin-left: 37%;
+}
 
 
 .header {
     grid-area: header;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(189, 182, 182, 0.74);
     padding: 1%;
     margin: 1% 1% 1% 1%;
 }
@@ -68,6 +89,7 @@ html {
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.74);
     margin: 0.5% 1% 1% 1.5%;  
+    height: auto;
 }
 
 .main h2 {
@@ -112,10 +134,9 @@ progress[value]::-webkit-progress-value {
 }
 
 .main .container {
-    position: relative;
-    float: left;
-    width: 50%;
-    margin-left: 3%;
+    display: inline-block;
+    max-width: 50%;
+    margin-left: 12%;
 }
 
 .main .right {
@@ -146,6 +167,12 @@ tr .right {
     grid-area: footer;
     padding: 1%;
     background-color:rgba(255, 255, 255, 0.74);
+}
+
+@media only screen and (max-width:1034px) {
+    .main .intro {
+        margin-left: 0;
+    }
 }
 
 
@@ -179,6 +206,8 @@ tr .right {
 
     .main .container {
         margin-left: 0;
+        width: 50%;
+        max-width: 100%;
     }
 
     .main img {
@@ -197,6 +226,10 @@ tr .right {
         width: 100%;
         float: left;
         text-align: left;
+    }
+
+    .main .container {
+        width: 100%;
     }
 
     .main .left, .main .right {

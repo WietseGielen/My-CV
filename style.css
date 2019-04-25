@@ -159,7 +159,7 @@ tr .right {
     }
 
     .navigator {
-        margin: 0 1.5% 0 1.5%;
+        margin: 0 1% 0 1.5%;
     }
 
     .main .left {
@@ -173,6 +173,10 @@ tr .right {
         position: relative;
         float: right;
         width: 40%;
+    }
+
+    .header, .footer {
+        margin: 1% 1% 1% 1.5%;
     }
 }
 
@@ -204,6 +208,6 @@ tr .right {
     }
 
     .navigator {
-        margin: 0.5% 1.5% 0.5% 1.5%;
+        margin: 0.2% 1% 0 1%;
     }
 }

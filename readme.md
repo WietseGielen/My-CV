@@ -1,1 +1,1 @@
-[Click here](https://wietsegielen.github.io/My-cv/cv.html 'Go to CV')
+[Click here](https://wietsegielen.github.io/My-CV/CV.html 'Go to CV')

@@ -20,7 +20,7 @@ html {
     grid-area: header;
     background-color: rgba(255, 255, 255, 0.74);
     padding: 1%;
-    margin: 1.5% 1.5% 1.5% 1.5%;
+    margin: 1% 1% 1% 1%;
 }
 
 .header h1 {
@@ -32,7 +32,7 @@ html {
 
 .navigator {
     grid-area: sidebar;
-    margin: 1.5% 2% 1.5% 1.5%;
+    margin: 1% 1.5% 1% 1%;
 }
 
 .navigator ul {
@@ -67,7 +67,7 @@ html {
     grid-area: main;
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.74);
-    margin: 0.5% 1.5% 1.5% 2%;  
+    margin: 0.5% 1% 1% 1.5%;  
 }
 
 .main h2 {
@@ -75,7 +75,7 @@ html {
 }
 
 .main h3 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .main img {
@@ -87,12 +87,7 @@ html {
 }
 
 .main progress {
-    width: 91%;
-    float: right;
-}
-
-.personal progress {
-    width: 81%
+    width: 100%;
 }
 
 progress[value] {
@@ -139,19 +134,12 @@ tr .right {
 
 
 .footer {
-    margin: 1.5% 1.5% 1.5% 1.5%;
+    margin: 1% 1% 1% 1%;
     grid-area: footer;
     padding: 1%;
     background-color:rgba(255, 255, 255, 0.74);
 }
 
-
-
-@media only screen and (max-width:1000px) {
-    .main progress, .personal progress {
-        width: 100%
-    }
-}
 
 /* Tablets */
 
@@ -195,7 +183,7 @@ tr .right {
         text-align: left;
     }
 
-    .main .left, .main .right {
+    .main .left {
         position: relative;
         float: left;
         width: 100%;

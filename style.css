@@ -87,12 +87,12 @@ html {
 }
 
 .main progress {
-    width: 90%;
+    width: 91%;
     float: right;
 }
 
 .personal progress {
-    width: 79%
+    width: 81%
 }
 
 progress[value] {
@@ -147,7 +147,7 @@ tr .right {
 
 
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1000px) {
     .main progress, .personal progress {
         width: 100%
     }

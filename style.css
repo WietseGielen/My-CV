@@ -2,16 +2,29 @@ html {
     background: url(https://images.pexels.com/photos/7674/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
     font-family: 'Segoe UI';
+    margin: 0;
+    padding-bottom: 60px;
 }
 
-.template {
+.full {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "visible"
+      "footer";
+
+}
+
+.visible {
+    grid-area: visible;
+
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas: 
       "header header header header"
       "main main main sidebar"
-      "footer footer footer footer";
 }
 
 .container-template {
@@ -21,6 +34,11 @@ html {
     grid-template-areas:
         "img data"
         "img intro";
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%
 }
 
 .main .img {
@@ -45,7 +63,7 @@ html {
 }
 
 .header h1 {
-    margin: auto;
+    margin: auto; 
     text-align: center;
 }
 
@@ -88,8 +106,7 @@ html {
     grid-area: main;
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.74);
-    margin: 0.5% 1% 1% 1.5%;  
-    height: auto;
+    margin: 0.5% 1% 1% 1.5%;
 }
 
 .main h2 {
@@ -106,6 +123,7 @@ html {
     margin-top: 2%;
     width: 25%;
     border-radius: 50%;
+    box-shadow: 0 0 10px 2px gray;
 }
 
 .main progress {
@@ -168,10 +186,17 @@ tr .right {
 
 
 .footer {
-    margin: 1% 1% 1% 1%;
-    grid-area: footer;
-    padding: 1%;
-    background-color:rgba(255, 255, 255, 0.74);
+    grid-area: footer;;
+    background: rgb(70, 70, 212);
+    color: white;
+    box-shadow: inset 0 15px 30px rgb(63, 63, 63);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 0 2% 3%;
+    margin-top: 3%;
+    position: fixed;
+    height: 30px;
 }
 
 /* small desktop */
@@ -191,12 +216,11 @@ tr .right {
 /* Tablets */
 
 @media only screen and (max-width:768px) {
-    .template {
+    .visible {
         grid-template-areas: 
             "header header header header ."
             "sidebar sidebar sidebar sidebar ."
-            "main main main main ."
-            "footer footer footer footer ."; 
+            "main main main main .";
     }
 
     .navigator li {
@@ -226,14 +250,14 @@ tr .right {
         padding-right: 3%;
     }
 
-    .main img {
+    .wrapper .main img {
         position: relative;
         float: right;
         width: 40%;
         margin-right: 5%;
     }
 
-    .header, .footer {
+    .header {
         margin: 1% 1% 1% 1.5%;
     }
 }
